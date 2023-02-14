@@ -1,0 +1,6 @@
+- id: nomad_fmt
+  name: Nomad fmt
+  description: Rewrites Hashicorp Nomad job files to a canonical format.
+  entry: hooks/terraform_fmt.sh
+  language: script
+  files: (\.hcl|\.job)$
