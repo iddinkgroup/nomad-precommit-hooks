@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
-echo $SCRIPT_DIR
-
-echo "hello from pre-commit"
+result=$(nomad fmt -recursive)
+if [ -n "$result" ]
+then
+    echo "$result"
+    exit 2
+fi
 
