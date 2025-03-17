@@ -7,4 +7,3 @@ then
     echo "$result"
     exit 2
 fi
-
