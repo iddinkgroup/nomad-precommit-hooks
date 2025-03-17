@@ -2,7 +2,7 @@
 
 [Hashicorp Nomad](https://www.nomadproject.io/) has a [fmt command](https://developer.hashicorp.com/nomad/docs/commands/fmt) that does syntax checking and formatting for nomad files. This is a [pre-commit](https://pre-commit.com/) hook for nomad jobs to validate your nomad files before commiting them to your repo.
 
-Requirements: Nomad 1.4 or higher.
+Requirements: Nomad 1.4 or higher.  
 
 You can configure your pre-commit by adding the following to your `.pre-commit-config.yml` file:
 
