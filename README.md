@@ -7,7 +7,7 @@ Requirements: Nomad 1.4 or higher.
 You can configure your pre-commit by adding the following to your `.pre-commit-config.yml` file:
 
 ```yaml
-- repo: https://dev.azure.com/magister/Magister%20Public/_git/nomad-precommit-hooks
+- repo: https://github.com/iddinkgroup/nomad-precommit-hooks
   rev: v0.0.1
   hooks:
     - id: nomad_fmt
